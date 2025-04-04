@@ -1,4 +1,3 @@
-
 package org.test;
 
 import org.openqa.selenium.WebDriver;
@@ -10,7 +9,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;
 
-public class webpagetest {
+public class WebPageTest {
     private static WebDriver driver;
 
     @BeforeTest
@@ -24,7 +23,7 @@ public class webpagetest {
     @Test
     public void titleValidationTest(){
         String actualTitle = driver.getTitle();
-        String expectedTitle = "Tripillar Solutions";
+        String expectedTitle = "Tri pillar Solutions";
         Assert.assertEquals(actualTitle, expectedTitle);
 
     }
@@ -37,3 +36,4 @@ public class webpagetest {
 
 
 }
+
